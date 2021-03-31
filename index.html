@@ -1,130 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        li {list-style-type: none;}
+    </style>
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <div>
-            <div>
-                <!--logo-->
-                <div>
-                    <a>WebStudio</a>
-                </div>
-                                
-                <!--navigation-->
-                <nav>
-                    <a>Студия</a>
-                    <a>Портфолио</a>
-                    <a>Контакты</a>
-                </nav>
-            </div>
-
-            <!--contacts-->
-            <div>
-                <div>
-                    <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </div>
-                <div>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </div>
-            </div>
-
-
-        </div>
-    </header>
-
-    <!--main section-->
-    <div>
-
-        <!--purpose-->
-        <div>
-        <h1 lang="ru">эффективные решения для вашего бизнеса</h1>
-        </div>
-
-        <button type="button" lang="ru">Заказать услугу</button>
-        
-        
-
-        <!--our strong sides-->
-
-        <ul lang="ru">
-            <li>внимание к деталям</li>
-            <li>пунктуальность</li>
-            <li>планирование</li>
-            <li>современные технологии</li>
+  <header>
+    <nav>
+        <a href="/"><img src="./img/WebStudio.svg" alt="logo"></a>
+        <ul>
+          <li><a href="">Студия</a></li>
+          <li><a href="">Портфолио</a></li>
+          <li><a href="">Контакты</a></li>
         </ul>
+    </nav>
+      <!--contacts-->
+        <ul>
+          <li lang="en"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+  </header>
 
+  <main>
+    <!--шапка-->
+    <section class="block_hero">
+      <h1>эффективные решения для вашего бизнеса</h1>
+      <button type="button">Заказать услугу</button>
+    </section>
 
-        <!--what we do-->
-        <div>
-            <h2 lang="ru">Чем мы занимаемся</h2>
+    <!--особенности-->
+    <section class="our_strong_sides">
+        <!-- заголовок h2 спрячется на этапе css -->
+        <h2>Особенности</h2>
+        <ul>
+            <li><h3>внимание к деталям</h3><p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+            <li><h3>пунктуальность</h3><p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+            <li><h3>планирование</h3><p>Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
+            <li><h3>современные технологии</h3><p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+        </ul>
+    </section>
 
-        <!--img-1-->
-       
-            <img src="https://ru.freepik.com/free-photo/close-up-image-of-programer-working-at-his-desk-in-office_5698344.htm#page=1&query=computer%20programmer&position=37" alt="computer" width="370" height="294">
-        <!--img-2-->
-        
-            <img src="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg" alt="smartphone" width="370" height="294">
-        <!--img-3-->
-       
-            <img src="creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg" alt="tablet" width="370" height="294">
+    <!--чем мы занимаемся-->
+    <section class="what_we_do">
+        <h2 >Чем мы занимаемся</h2>
+          <ul>
+            <li><a href=""><img src="./img/box1.jpg" alt="computer" width="370"></a></li>
+            <li><a href=""><img src="./img/box2.jpg" alt="smartphone" width="370"></a></li>
+            <li><a href=""><img src="./img/box3.jpg" alt="tablet" width="370"></a></li>
+          </ul>
+    </section>
 
+    <!--наша команда-->
+    <section class="our_team">
+        <h2>Наша команда</h2>
+        <ul> 
+          <li><img src="img/igor.jpg" alt="Igor" width="270">
+              <h4>Игорь Демьяненко</h4>
+              <p class="profession">Product Designer</p></li>
+          <li><img src="img/olga.jpg" alt="Olga" width="270">
+              <h4>Ольга Репина</h4>
+              <p class="profession">Frontend Developer</p></li>
+          <li><img src="img/nikolay.jpg" alt="Nikolay" width="270">
+              <h4>Николай Тарасов</h4>
+              <p class="profession">Marketing</p></li>
+          <li><img src="img/mikhail.jpg" alt="Mikhail" width="270">
+              <h4>Михаил Ермаков Designer</h4>
+              <p class="profession"></p></li>
+        </ul>
+    </section>
+  </main>
 
-        </div>
-
-
-
-
-        <!--our team-->
-        <div>
-        <h2 lang="ru">Наша команда</h2>
-        </div>
-        
-        <!--container size 270*368-->
-            <!--img-1-->
-            <img src="img/igor.jpg" alt="Igor" width="270" height="260"> 
-            <figcaption>Игорь Демьяненко Product Designer</figcaption>
-            <!--img-2-->
-            <img src="img/olga.jpg" alt="Olga" width="270" height="260"> 
-            <figcaption>Ольга Репина Frontend Developer</figcaption>
-            <!--img-3-->
-            <img src="img/nikolay.jpg" alt="Nikolay" width="270" height="260"> 
-            <figcaption>Николай Тарасов Marketing</figcaption>
-            <!--img-4-->
-            <img src="img/mikhail.jpg" alt="Mikhail" width="270" height="260">
-            <figcaption>Михаил Ермаков Designer</figcaption>
-
-    </div>
-
-
-    <!--footer-->
-    <div>  
-        <div>
-            <!--logo-->
-            <div>WebStudio</div>
-            
-
-            <address lang="ru">
-            г.Киев пр-т Леси Украинки, 26
-            </address>
-
-            <div>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </div>
-            <div>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </div>
-        </div>
-
-    </div>
-
-
+  <footer class="footer">  
+        <a href="/"><img src="./img/WebStudio.svg" alt="logo"></a>
+        <address lang="ru">
+            <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383859">г.Киев пр-т Леси Украинки, 26</a>
+        </address>
+        <ul>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+  </footer>
 </body>
 </html>
